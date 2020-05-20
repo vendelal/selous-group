@@ -1,0 +1,32 @@
+button,
+.button {
+  appearance: none;
+  background-color: $gray-2;
+  border: 0;
+  border-radius: $border-radius-base;
+  color: transparent;
+  cursor: pointer;
+  display: inline-block;
+  -webkit-font-smoothing: antialiased;
+  font-family: $font-family-body;
+  font-size: 1rem;
+  letter-spacing: $letter-spacing-wide;
+  line-height: 1;
+  padding: $space-2 $space-4;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+
+  &:hover {
+    background-color: $white;
+    transition: background-color $base-duration;
+  }
+}

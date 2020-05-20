@@ -1,0 +1,5 @@
+header {  
+  @include breakpoint("medium") {
+    width: 100%;
+  }
+}

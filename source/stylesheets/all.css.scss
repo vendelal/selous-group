@@ -1,0 +1,25 @@
+//setup
+@charset 'utf-8';
+
+@import "settings/variables.scss";
+
+@import "tools/breakpoints-mixin.scss";
+@import "tools/margins.scss";
+
+@import "generic/normalize.css";
+@import "generic/layout.scss";
+
+@import "elements/article.scss";
+@import "elements/header.scss";
+@import "elements/nav.scss";
+@import "elements/type-elements.scss";
+
+@import "objects/buttons.scss";
+@import "objects/container.scss";
+
+@import "components/two-columns";
+@import "components/header";
+@import "components/icon";
+@import "components/photo";
+
+// @import "trumps/*";

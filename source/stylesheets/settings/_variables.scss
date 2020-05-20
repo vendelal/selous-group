@@ -1,0 +1,39 @@
+// Colors
+$white: #FFFFFF;
+$gray-1: #222222;
+$gray-2: #666666;
+$gray-3: #ADADAD;
+
+// Spacing
+$space-1: 0.5em;
+$space-2: 1em;
+$space-3: 1.5em;
+$space-4: 2em;
+$space-5: 3em;
+$space-6: 5em;
+
+// Breakpoints
+$breakpoints: (
+  x-small: 15em,
+  small: 40em,
+  medium: 55em,
+  large: 88em
+);
+
+// Animations
+$base-duration: 500ms;
+
+// Borders
+$border-radius-base: 0px;
+$divider: 1px solid $gray-2;
+
+// Typography
+$letter-spacing-wide: 0.1rem;
+$line-height-body: 1.5rem;
+$font-family-header: 'Frank Ruhl Libre', serif;
+$font-family-body: 'Work Sans', sans-serif;
+
+// Font Sizes
+$font-size-body: 1rem;
+$font-size-header: 1.5rem;
+$font-size-links: 0.85rem;

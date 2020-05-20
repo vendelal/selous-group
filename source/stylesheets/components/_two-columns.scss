@@ -1,0 +1,19 @@
+.two-columns {
+  @include breakpoint("medium") {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  &.centered {
+    align-items: center;
+    justify-items: center;
+  }
+
+  .icon {
+    margin: $space-6;
+  }
+
+  &.two-columns--with-divider {
+    border-top: $divider;
+  }
+}
