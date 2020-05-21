@@ -1,0 +1,37 @@
+.contact-form {
+  border-top: $divider;
+  text-align: center;
+}
+
+.contact-form__description {
+  max-width: 40rem;
+  margin: $space-3 auto;
+  text-align: left;
+}
+
+
+.contact-form__title {
+  margin-bottom: $space-4;
+}
+
+.contact-form__form {
+  margin: $space-3 auto;
+  max-width: 40rem;
+  text-align: left;
+}
+
+.contact-form__input-wrapper {
+  background-color: $gray-4;
+  margin-bottom: $space-1;
+  padding: $space-1 $space-2;
+}
+
+.contact-form__label {
+  display: block;
+}
+
+.contact-form__button {
+  display: block;
+  font-size: $font-size-small;
+  margin: $space-4 auto;
+}

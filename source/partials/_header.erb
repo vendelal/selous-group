@@ -2,19 +2,26 @@
   <h1>
     Selous Group
   </h1>
+
   <p>
     Bridging the PPE supply gap to US healthcare and government
   </p>
-  <div class="two-columns two-columns--with-divider centered margin-top-6">
-    <%= inline_svg(
-      "us-flag.svg",
-      class: "icon",
-      role: "img"
-    ) %>
-    <%= inline_svg(
-      "osprey.svg",
-      class: "icon",
-      role: "img"
-    ) %>
+
+  <div class="two-columns two-columns--with-divider two-columns--mobile centered margin-top-6">
+    <div class="two-columns__column two-columns__column--first">
+      <%= inline_svg(
+        "us-flag.svg",
+        class: "icon",
+        role: "img"
+      ) %>
+    </div>
+
+    <div class="two-columns__column">
+      <%= inline_svg(
+        "osprey.svg",
+        class: "icon",
+        role: "img"
+      ) %>
+    </div>
   </div>
 </div>

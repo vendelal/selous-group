@@ -2,6 +2,10 @@
   @include breakpoint("medium") {
     display: grid;
     grid-template-columns: 1fr 1fr;
+
+    .icon {
+      margin: $space-6;
+    }
   }
 
   &.centered {
@@ -10,10 +14,24 @@
   }
 
   .icon {
-    margin: $space-6;
+    margin: $space-4 $space-3 $space-3;
   }
+}
 
-  &.two-columns--with-divider {
-    border-top: $divider;
-  }
+.two-columns--mobile {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.two-columns--with-divider {
+  border-top: $divider;
+}
+
+.two-columns__column {
+  margin-top: $space-2;
+  width: 100%;
+}
+
+.two-columns__column--first {
+  border-right: $divider;
 }

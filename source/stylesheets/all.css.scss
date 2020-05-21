@@ -11,15 +11,18 @@
 
 @import "elements/article.scss";
 @import "elements/header.scss";
+@import "elements/input.scss";
 @import "elements/nav.scss";
 @import "elements/type-elements.scss";
 
-@import "objects/buttons.scss";
-@import "objects/container.scss";
+@import "objects/buttons";
+@import "objects/container";
+@import "objects/footer";
 
-@import "components/two-columns";
+@import "components/contact-form";
 @import "components/header";
 @import "components/icon";
 @import "components/photo";
+@import "components/two-columns";
 
 // @import "trumps/*";
