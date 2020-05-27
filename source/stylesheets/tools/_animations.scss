@@ -1,0 +1,76 @@
+$_animation-duration-slow: 1s;
+$_animation-duration-medium: 700ms;
+$_animation-duration-base: 500ms;
+
+@keyframes fade-in-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-down {
+  animation-duration: $_animation-duration-slow;
+  animation-name: fade-in-down;
+  animation-timing-function: ease-out;
+
+  @media (prefers-reduced-motion: reduce) {
+    .fade-in-down {
+      animation: none;
+    }
+  }
+}
+
+@keyframes fade-in-right {
+  0% {
+    opacity: 0;
+    transform: translateX(-15px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.fade-in-right {
+  animation-duration: $_animation-duration-base;
+  animation-fill-mode: both;
+  animation-name: fade-in-right;
+  animation-timing-function: ease-out;
+
+  @media (prefers-reduced-motion: reduce) {
+    .fade-in-right {
+      animation: none;
+    }
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation-delay: $_animation-duration-medium;
+  animation-duration: $_animation-duration-medium;
+  animation-fill-mode: both;
+  animation-name: fade-in;
+  animation-timing-function: ease-out;
+
+  @media (prefers-reduced-motion: reduce) {
+    .fade-in {
+      animation: none;
+    }
+  }
+}

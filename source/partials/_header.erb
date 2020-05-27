@@ -1,14 +1,17 @@
 <div class="header">
-  <h1>
+  <h1 class="fade-in-down">
     Selous Group
   </h1>
 
-  <p>
+  <p class="header__tag-line fade-in">
     Bridging the PPE supply gap to US healthcare and government
   </p>
 
   <div class="two-columns two-columns--with-divider two-columns--mobile centered margin-top-6">
-    <div class="two-columns__column two-columns__column--first">
+    <div
+      class="two-columns__column two-columns__column--first"
+      data-aos="fade"
+      data-aos-duration="1000">
       <%= inline_svg(
         "us-flag.svg",
         class: "icon",
@@ -16,7 +19,10 @@
       ) %>
     </div>
 
-    <div class="two-columns__column">
+    <div
+      class="two-columns__column"
+      data-aos="fade-left"
+      data-aos-duration="1500">
       <%= inline_svg(
         "osprey.svg",
         class: "icon",
