@@ -1,0 +1,46 @@
+.solutions {
+  @include breakpoint("small") {
+    display: grid;
+    grid-template-areas:
+      "solution-1-header solution-2-header"
+      "solution-1-body   solution-2-body";
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.solution-1-header,
+.solution-2-header,
+.solution-1-body,
+.solution-2-body {
+  @include breakpoint("small") {
+    padding: 0 $space-3;
+  }
+}
+
+.solution-1-header,
+.solution-2-header {
+  max-width: 35ch;
+  padding: $space-3 0;
+
+  @include breakpoint("small") {
+    padding: $space-3;
+    place-self: center;
+    text-align: center;
+  }
+}
+
+.solution-1-header {
+  grid-area: solution-1-header;
+}
+
+.solution-1-body {
+  grid-area: solution-1-body;
+}
+
+.solution-2-header {
+  grid-area: solution-2-header;
+}
+
+.solution-2-body {
+  grid-area: solution-2-body;
+}
