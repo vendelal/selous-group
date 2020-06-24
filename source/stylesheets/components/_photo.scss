@@ -3,10 +3,11 @@
   background-image: url("../images/osprey-photo.png");
   background-size: cover;
   background-position: bottom;
-  height: 40rem;
+  height: 17rem;
   width: 100%;
 
   @include breakpoint("small") {
     background-attachment: fixed;
+    height: 40rem;
   }
 }

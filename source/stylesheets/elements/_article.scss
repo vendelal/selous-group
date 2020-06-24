@@ -1,3 +1,7 @@
 article {
-  padding: $space-3;
+padding: $space-3 0;
+
+  @include breakpoint("small") {
+    padding: $space-3;
+  }
 }
